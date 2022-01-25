@@ -140,6 +140,7 @@ const list& list::operator=(const list& c)
 	node * c_current = c.m_head;
 	while(c_current != nullptr){
 			push_back(c_current->m_value);
+			c_current = c_current->m_next;
 	}
     return *this;
 }
